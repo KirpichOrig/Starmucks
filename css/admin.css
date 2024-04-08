@@ -1,0 +1,164 @@
+/*
+=================
+Global
+=================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s;
+    font-family: 'Oswald';
+    cursor: default;
+}
+.py-20 {
+    padding: 0 20px;
+}
+a {
+    cursor: pointer;
+}
+.section {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.title-left {
+    text-align: left;
+}
+.title-center {
+    text-align: center;
+}
+.title-right {
+    text-align: right;
+}
+.m-160 {
+    margin-top: 160px;
+}
+/*
+=================
+Global
+=================
+*/
+.admin {
+    height: 900px;
+}
+.admin-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.title-left p {
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.title-center p {
+    font-size: 46px;
+    font-weight: 500;
+}
+.admin-product-bg {
+    background: #000;
+}
+.admin-product {
+    margin-top: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.admin-product a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/*
+=================
+Footer
+=================
+*/
+footer {
+    border-top: 1px solid #000;
+    background: #ffffff;
+}
+.footer-content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.footer-logotip {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 600;
+}
+.footer-nav {
+    display: flex;
+    gap: 12px;
+}
+.footer-name {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 400;
+}
+.footer-nav a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 200;
+}
+.footer-btn {
+    padding: 6px 32px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+.footer-btn:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/* admin */
+@media screen and (max-width: 480px){
+    .admin {
+        height: 1400px;
+    }
+    .title-left {
+        max-width: 320px;
+    }
+    .admin-product-bg {
+        height: 180px;
+    }
+    .admin-product {
+        max-width: 320px;
+        align-items: flex-start;
+        height: 180px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+/* footer */
+@media screen and (max-width: 480px){
+    footer {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 630px){
+    footer {
+        height: 180px;
+    }
+    .footer-content {
+        height: 180px;
+        padding: 20px 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
