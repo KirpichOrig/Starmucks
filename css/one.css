@@ -91,7 +91,7 @@ Product
 =================
 */
 .one {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     align-items: center;
 }
@@ -212,6 +212,12 @@ Burger menu
     color: black;
     font-size: 22px;
     font-weight: 400;
+}
+/* global */
+@media screen and (max-width: 340px){
+    .py-20 {
+        padding: 0 6px;
+    }
 }
 /* header */
 @media screen and (min-width: 800px){
